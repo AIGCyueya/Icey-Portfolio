@@ -1,0 +1,384 @@
+/* Shared scroll + entrance animations (CSS-first, IO-triggered) */
+
+.animate-in {
+  opacity: 0;
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--stagger-delay, 0ms);
+  will-change: opacity, transform;
+  filter: blur(5px);
+}
+
+.animate-in--fade-up {
+  transform: translateY(32px);
+}
+
+.animate-in--fade-in {
+  transform: none;
+}
+
+.animate-in--slide-right {
+  transform: translateX(-24px);
+}
+
+.animate-in--slide-left {
+  transform: translateX(24px);
+}
+
+.animate-in--scale-in {
+  transform: scale(0.94);
+}
+
+.animate-in--clip-up {
+  transform: translateY(18px);
+  clip-path: inset(12% 0 0 0);
+}
+
+.animate-in--visible {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+  clip-path: inset(0);
+}
+
+/* Route / page enter */
+.page-enter {
+  animation: page-enter 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+/* Stagger children when parent becomes visible */
+.animate-in--visible.stagger-children > *,
+.animate-in--visible .stagger-children > * {
+  animation: motion-rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-in--visible.stagger-children > *:nth-child(1),
+.animate-in--visible .stagger-children > *:nth-child(1) { animation-delay: 40ms; }
+.animate-in--visible.stagger-children > *:nth-child(2),
+.animate-in--visible .stagger-children > *:nth-child(2) { animation-delay: 90ms; }
+.animate-in--visible.stagger-children > *:nth-child(3),
+.animate-in--visible .stagger-children > *:nth-child(3) { animation-delay: 140ms; }
+.animate-in--visible.stagger-children > *:nth-child(4),
+.animate-in--visible .stagger-children > *:nth-child(4) { animation-delay: 190ms; }
+.animate-in--visible.stagger-children > *:nth-child(5),
+.animate-in--visible .stagger-children > *:nth-child(5) { animation-delay: 240ms; }
+.animate-in--visible.stagger-children > *:nth-child(6),
+.animate-in--visible .stagger-children > *:nth-child(6) { animation-delay: 290ms; }
+.animate-in--visible.stagger-children > *:nth-child(7),
+.animate-in--visible .stagger-children > *:nth-child(7) { animation-delay: 340ms; }
+.animate-in--visible.stagger-children > *:nth-child(8),
+.animate-in--visible .stagger-children > *:nth-child(8) { animation-delay: 390ms; }
+.animate-in--visible.stagger-children > *:nth-child(9),
+.animate-in--visible .stagger-children > *:nth-child(9) { animation-delay: 440ms; }
+.animate-in--visible.stagger-children > *:nth-child(10),
+.animate-in--visible .stagger-children > *:nth-child(10) { animation-delay: 490ms; }
+.animate-in--visible.stagger-children > *:nth-child(11),
+.animate-in--visible .stagger-children > *:nth-child(11) { animation-delay: 540ms; }
+
+@keyframes motion-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes motion-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.88) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Soft ambient float (decorative) */
+.motion-float {
+  animation: motion-float 6s ease-in-out infinite;
+}
+
+@keyframes motion-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Accent line draw */
+.motion-line::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-top: 0.65rem;
+  border-radius: 2px;
+  background: var(--gradient);
+  transition: width 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-in--visible .motion-line::after,
+.motion-line--active::after {
+  width: 3.5rem;
+}
+
+/* Image media hover zoom */
+.motion-media {
+  overflow: hidden;
+}
+
+.motion-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), filter 0.5s ease;
+}
+
+.motion-media:hover img {
+  transform: scale(1.04);
+}
+
+/* Shine sweep on interactive surfaces */
+.motion-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.motion-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    color-mix(in srgb, #fff 10%, transparent) 48%,
+    transparent 62%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.motion-shine:hover::after {
+  transform: translateX(120%);
+}
+
+/* Hero stagger */
+.hero-animate {
+  opacity: 0;
+  animation: hero-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--hero-delay, 0ms);
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.hero-bg-text {
+  animation: hero-watermark 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.15s forwards;
+  opacity: 0;
+}
+
+@keyframes hero-watermark {
+  from { opacity: 0; }
+  to { opacity: 0.9; }
+}
+
+/* Journey timeline */
+.journey-item__year {
+  opacity: 0;
+  transform: translateX(12px);
+  transition:
+    opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: var(--stagger-delay, 0ms);
+}
+
+.journey-item--visible .journey-item__year {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.journey-item__rail::before {
+  transform-origin: top center;
+  transform: scaleY(0);
+  transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: calc(var(--stagger-delay, 0ms) + 120ms);
+}
+
+.journey-item--visible .journey-item__rail::before {
+  transform: scaleY(1);
+}
+
+.journey-item__node {
+  opacity: 0;
+  transform: scale(0.4);
+  transition:
+    opacity 0.4s ease,
+    transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.4s ease;
+  transition-delay: calc(var(--stagger-delay, 0ms) + 280ms);
+}
+
+.journey-item--visible .journey-item__node {
+  opacity: 1;
+  transform: scale(1);
+  animation: journey-node-glow 2.8s ease-in-out 0.6s infinite;
+}
+
+@keyframes journey-node-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 4px var(--accent-soft), 0 0 14px var(--eyebrow-glow);
+  }
+  50% {
+    box-shadow: 0 0 0 6px var(--accent-soft), 0 0 22px color-mix(in srgb, var(--accent) 55%, transparent);
+  }
+}
+
+.journey-metric {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.55s ease,
+    transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: calc(var(--stagger-delay, 0ms) + var(--metric-delay, 0ms));
+}
+
+.journey-item--visible .journey-metric {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Arc / chip cascade */
+.animate-in--visible .journey-arc > *,
+.animate-in--visible .lab-arc > * {
+  animation: motion-pop 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-in--visible .journey-arc > *:nth-child(1),
+.animate-in--visible .lab-arc > *:nth-child(1) { animation-delay: 40ms; }
+.animate-in--visible .journey-arc > *:nth-child(2),
+.animate-in--visible .lab-arc > *:nth-child(2) { animation-delay: 90ms; }
+.animate-in--visible .journey-arc > *:nth-child(3),
+.animate-in--visible .lab-arc > *:nth-child(3) { animation-delay: 140ms; }
+.animate-in--visible .journey-arc > *:nth-child(4),
+.animate-in--visible .lab-arc > *:nth-child(4) { animation-delay: 190ms; }
+.animate-in--visible .journey-arc > *:nth-child(5),
+.animate-in--visible .lab-arc > *:nth-child(5) { animation-delay: 240ms; }
+.animate-in--visible .journey-arc > *:nth-child(6),
+.animate-in--visible .lab-arc > *:nth-child(6) { animation-delay: 290ms; }
+.animate-in--visible .journey-arc > *:nth-child(7),
+.animate-in--visible .lab-arc > *:nth-child(7) { animation-delay: 340ms; }
+.animate-in--visible .journey-arc > *:nth-child(8),
+.animate-in--visible .lab-arc > *:nth-child(8) { animation-delay: 390ms; }
+.animate-in--visible .journey-arc > *:nth-child(9),
+.animate-in--visible .lab-arc > *:nth-child(9) { animation-delay: 440ms; }
+.animate-in--visible .journey-arc > *:nth-child(10),
+.animate-in--visible .lab-arc > *:nth-child(10) { animation-delay: 490ms; }
+.animate-in--visible .journey-arc > *:nth-child(11),
+.animate-in--visible .lab-arc > *:nth-child(11) { animation-delay: 540ms; }
+
+/* Case study expand */
+.case-study--collapsed .case-study__body {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.case-study__body {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  max-height: 4000px;
+  opacity: 1;
+  transition:
+    max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s ease;
+}
+
+.case-study:not(.case-study--collapsed) .case-study__section {
+  animation: motion-rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.case-study:not(.case-study--collapsed) .case-study__section:nth-child(1) { animation-delay: 40ms; }
+.case-study:not(.case-study--collapsed) .case-study__section:nth-child(2) { animation-delay: 100ms; }
+.case-study:not(.case-study--collapsed) .case-study__section:nth-child(3) { animation-delay: 160ms; }
+.case-study:not(.case-study--collapsed) .case-study__section:nth-child(4) { animation-delay: 220ms; }
+
+.case-study__toggle-icon {
+  display: inline-block;
+  transition: transform 0.3s var(--ease);
+}
+
+.case-study__toggle-icon--open {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-in,
+  .hero-animate,
+  .hero-bg-text,
+  .page-enter,
+  .motion-float,
+  .motion-shine::after,
+  .motion-media img {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    filter: none !important;
+    clip-path: none !important;
+  }
+
+  .animate-in--visible.stagger-children > *,
+  .animate-in--visible .stagger-children > *,
+  .animate-in--visible .journey-arc > *,
+  .animate-in--visible .lab-arc > *,
+  .case-study:not(.case-study--collapsed) .case-study__section,
+  .journey-item--visible .journey-item__node {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .journey-item__year,
+  .journey-item__rail::before,
+  .journey-item__node,
+  .journey-metric {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .case-study__body {
+    transition: none !important;
+  }
+}
