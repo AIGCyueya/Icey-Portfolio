@@ -1,0 +1,133 @@
+{
+    "name": "LONG YUJIE",
+    "nameZh": "龙雨洁",
+    "signal": "DESIGN × AI PRACTICE × ECOSYSTEM",
+    "roleLine": "AI产品运营 · AI生态建设 · AI Creator",
+    "subtitle": [
+        "从 AI 创作实践到产品生态建设，",
+        "探索 AI 能力如何从模型和工具走向真实应用场景。"
+    ],
+    "bridge": {
+        "label": "向下滚动，看完整叙事",
+        "hint": "优势 → 路径 → 影响力 → 入口"
+    },
+    "portrait": {
+        "src": "images/home/portrait.jpg",
+        "alt": "LONG YUJIE · AI Creator"
+    },
+    "workspace": {
+        "title": "AI Workspace",
+        "subtitle": "长期使用 · 研究 · 实践",
+        "groups": [
+            {
+                "label": "AI Creation",
+                "items": ["Stable Diffusion", "ComfyUI", "LoRA", "Agent", "Vibe coding"]
+            },
+            {
+                "label": "AI Product",
+                "items": ["AIGC产品", "AI社区运营", "开发者生态"]
+            },
+            {
+                "label": "Technology",
+                "items": ["多模态AI", "模型应用", "AI工作流"]
+            }
+        ]
+    },
+    "strengths": {
+        "title": "我的优势",
+        "items": [
+            {
+                "index": "01",
+                "title": "设计思维",
+                "titleEn": "Design Thinking",
+                "desc": "视觉设计背景，让我关注用户体验、内容表达，以及复杂能力如何把门槛降下来。"
+            },
+            {
+                "index": "02",
+                "title": "AI实践",
+                "titleEn": "AI Practice",
+                "desc": "长期做 AI 绘画、模型创作和工作流探索，从真实使用者角度理解 AI 用户需求。"
+            },
+            {
+                "index": "03",
+                "title": "生态建设",
+                "titleEn": "Ecosystem Building",
+                "desc": "连接开发者、创作者、企业和用户，把 AI 能力推进到真实应用场景。"
+            }
+        ]
+    },
+    "journeyBrief": {
+        "title": "My Journey",
+        "cta": "查看完整成长路径",
+        "href": "/journey",
+        "nodes": [
+            {
+                "year": "2017",
+                "title": "设计基础",
+                "line": "视觉设计 → 用户体验思维"
+            },
+            {
+                "year": "2021",
+                "title": "内容生态",
+                "line": "UGC平台 → 创作者运营"
+            },
+            {
+                "year": "2022",
+                "title": "AI Creator",
+                "line": "AI绘画创作 → AI社区连接"
+            },
+            {
+                "year": "2023",
+                "title": "AI Product",
+                "line": "企业AIGC应用 → 产品落地"
+            },
+            {
+                "year": "2024",
+                "title": "AI Ecosystem",
+                "line": "魔乐社区AIGC专区0-1建设"
+            },
+            {
+                "year": "2025+",
+                "title": "Technology",
+                "line": "Master of IT → 技术理解"
+            }
+        ]
+    },
+    "impact": {
+        "title": "AI影响力",
+        "metrics": [
+            { "value": "40,000+", "label": "AI社区参与用户" },
+            { "value": "1,000+", "label": "AI创作者生态" },
+            { "value": "1M+", "label": "AI模型运行次数" },
+            { "value": "14K+", "label": "AI内容互动" }
+        ],
+        "links": [
+            { "label": "查看项目", "href": "/projects" },
+            { "label": "进入 AI Lab", "href": "/lab" }
+        ]
+    },
+    "entries": {
+        "title": "精选入口",
+        "items": [
+            {
+                "title": "AIGC社区0-1建设",
+                "meta": "中国电信天翼云 · 魔乐社区",
+                "tags": ["开发者生态", "创作者运营", "AI赛事"],
+                "href": "/projects"
+            },
+            {
+                "title": "企业AIGC应用",
+                "meta": "云阙AI",
+                "tags": ["企业客户", "AI营销", "商业落地"],
+                "href": "/projects"
+            },
+            {
+                "title": "AI Creator Lab",
+                "meta": "创作 · 社区 · 工作流",
+                "tags": ["模型创作", "ComfyUI", "LoRA", "AI内容生态"],
+                "href": "/lab"
+            }
+        ]
+    },
+    "philosophy": "AI 的价值不只来自模型能力，更来自模型、开发者、创作者、用户和应用场景之间形成的连接。"
+}

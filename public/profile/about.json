@@ -1,0 +1,73 @@
+{
+    "avatar": {
+        "src": "images/about/avatar.jpg",
+        "alt": "龙雨洁"
+    },
+    "intro": {
+        "title": "关于我",
+        "paragraphs": [
+            "我是龙雨洁，一名专注 AI 产品运营与 AI 生态建设的产品运营者。",
+            "拥有视觉设计与计算机技术复合背景，经历覆盖 AI 创作实践、AIGC 产品运营和开发者社区建设。",
+            "希望通过产品思维连接技术能力、用户需求和真实应用场景。"
+        ]
+    },
+    "basics": {
+        "title": "基本信息",
+        "items": [
+            { "label": "姓名", "value": "龙雨洁" },
+            { "label": "出生年份", "value": "2000年" },
+            { "label": "专业", "value": "计算机科学与技术" },
+            { "label": "毕业时间", "value": "2026年6月" },
+            { "label": "职业方向", "value": "AI产品运营 / AI生态建设" },
+            { "label": "性格", "value": "ENTJ" },
+            { "label": "电话", "value": "15618164289", "href": "tel:15618164289" },
+            { "label": "邮箱", "value": "kikki0527@gmail.com", "href": "mailto:kikki0527@gmail.com" }
+        ]
+    },
+    "education": {
+        "title": "教育背景",
+        "note": "设计背景帮助理解用户体验，技术学习帮助理解 AI 能力边界。",
+        "items": [
+            {
+                "school": "马来西亚世纪大学",
+                "degree": "Master of IT",
+                "degreeZh": "信息技术硕士",
+                "period": "2025 - 2026"
+            },
+            {
+                "school": "上海应用技术大学",
+                "degree": "视觉设计专业",
+                "degreeZh": "",
+                "period": "2017 - 2021"
+            }
+        ]
+    },
+    "directions": {
+        "title": "核心方向",
+        "items": [
+            {
+                "title": "AI产品运营",
+                "desc": "把 AI 能力放进真实业务，对齐用户需求与产品路径。"
+            },
+            {
+                "title": "AIGC生态建设",
+                "desc": "连接开发者、创作者和用户，让社区持续有供给、有参与。"
+            },
+            {
+                "title": "AI创作者实践",
+                "desc": "长期做模型创作与内容实践，从使用者视角理解门槛和体验。"
+            }
+        ]
+    },
+    "contact": {
+        "title": "联系方式",
+        "headline": "欢迎交流",
+        "topics": [
+            "AI产品运营机会",
+            "AI生态建设方向",
+            "开发者社区相关合作"
+        ],
+        "phone": "15618164289",
+        "email": "kikki0527@gmail.com"
+    }
+}

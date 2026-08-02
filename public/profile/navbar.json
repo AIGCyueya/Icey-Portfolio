@@ -1,0 +1,30 @@
+{
+    "logo" : {
+        "source": "images/logo.svg",
+        "height": 36,
+        "width": 72,
+        "alt": "LYJ"
+    },
+    "sections": [
+        {
+            "title": "首页",
+            "href": "/"
+        },
+        {
+            "title": "项目",
+            "href": "/projects"
+        },
+        {
+            "title": "成长路径",
+            "href": "/journey"
+        },
+        {
+            "title": "AI Lab",
+            "href": "/lab"
+        },
+        {
+            "title": "关于我",
+            "href": "/profile"
+        }
+    ]
+}

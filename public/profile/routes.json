@@ -1,0 +1,24 @@
+{
+    "sections": [
+        {
+            "component": "Projects",
+            "path": "/projects",
+            "headerTitle": "项目案例"
+        },
+        {
+            "component": "Journey",
+            "path": "/journey",
+            "headerTitle": "My Journey"
+        },
+        {
+            "component": "Creator",
+            "path": "/lab",
+            "headerTitle": "AI Lab"
+        },
+        {
+            "component": "About",
+            "path": "/profile",
+            "headerTitle": "关于我"
+        }
+    ]
+}

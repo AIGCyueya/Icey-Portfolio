@@ -1,0 +1,217 @@
+{
+    "hero": {
+        "subtitle": "从 AI 创作者，到 AI 产品运营者。",
+        "lead": "记录我在模型创作、社区交流和 AI 产品实践中的长期积累。",
+        "tagline": "真正理解 AI 产品，需要先理解使用 AI 的人。",
+        "visual": "images/lab/tusi.png",
+        "visualAlt": "AI 创作与模型发布现场"
+    },
+    "arcLine": [
+        { "key": "creator", "label": "AI Creator", "labelZh": "创作者" },
+        { "key": "community", "label": "AI Community", "labelZh": "社区" },
+        { "key": "ecosystem", "label": "AI Ecosystem", "labelZh": "生态运营" },
+        { "key": "practice", "label": "AI Practice", "labelZh": "产品实践" }
+    ],
+    "sections": [
+        {
+            "id": "creator",
+            "title": "01 AI Creator",
+            "subtitle": "从创作者视角进入 AI",
+            "lead": [
+                "2022 年开始接触生成式 AI。最开始不是为了工作，而是因为兴趣走进 AI 创作。",
+                "持续使用 Midjourney、Stable Diffusion，自己运营 AI 内容账号、发作品、试模型效果，后来也做过定制交付和创作者交流。"
+            ],
+            "tags": ["AI绘画创作", "内容账号运营", "模型发布", "定制工作室", "创作者交流"],
+            "insight": "早期做 AI 创作时，我最大的感受是：门槛往往不在生成结果本身，而在第一次成功体验。用户不知道输入什么、怎么调整、什么结果算好——这些细节，决定了人会不会继续用下去。",
+            "platforms": [
+                {
+                    "name": "吐司 Tusi",
+                    "badge": "AI模型创作者平台 · PRO认证",
+                    "note": "长期发布模型、沉淀创作内容，也在用户运行和反馈里看真实使用情况。",
+                    "insight": "模型发出去之后，我开始关心的不只是作品本身，还有用户怎么找到它、为什么愿意点运行、什么内容会带动二次传播。",
+                    "image": "images/lab/tusi.png",
+                    "imageAlt": "吐司 Tusi 创作者主页截图",
+                    "metrics": [
+                        { "value": "61+", "label": "AI模型资产" },
+                        { "value": "6,289+", "label": "AI创作帖子" },
+                        { "value": "100万+", "label": "模型运行次数" },
+                        { "value": "983+", "label": "模型下载用户" },
+                        { "value": "60.5K+", "label": "获赞" },
+                        { "value": "4.3K+", "label": "收藏星标" }
+                    ]
+                },
+                {
+                    "name": "LibLibAI",
+                    "badge": "AI模型与素材创作社区",
+                    "note": "在模型社区里发布作品，看调用、互动和粉丝反馈。",
+                    "insight": "慢慢会发现，AI 内容传播和传统内容平台不太一样：用户不只是看完就走，也会改、会复用、会再创造。",
+                    "image": "images/lab/liblib.png",
+                    "imageAlt": "LibLibAI 创作者主页截图",
+                    "metrics": [
+                        { "value": "10.6万+", "label": "作品调用次数" },
+                        { "value": "600+", "label": "作品获赞" },
+                        { "value": "193+", "label": "粉丝" }
+                    ]
+                },
+                {
+                    "name": "小红书 / Rednote",
+                    "badge": "AI内容账号",
+                    "note": "内容方向：AI 工具体验、创作案例、行业观察。",
+                    "insight": "面对普通用户时，很多人其实对 AI 感兴趣；但真要开始用，还是需要更低门槛的案例和更白话的解释。",
+                    "imageFit": "contain",
+                    "images": [
+                        { "src": "images/lab/xhs-1.jpg", "alt": "小红书主页名片" },
+                        { "src": "images/lab/xhs-2.jpg", "alt": "小红书内容截图" },
+                        { "src": "images/lab/xhs-3.jpg", "alt": "小红书内容截图" }
+                    ],
+                    "metrics": [
+                        { "value": "1,534+", "label": "粉丝" },
+                        { "value": "14K+", "label": "点赞与收藏" },
+                        { "value": "384+", "label": "关注" }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "community",
+            "title": "02 AI Community",
+            "subtitle": "从个人创作者进入 AI 圈层",
+            "lead": [
+                "创作之外，我也走进线下和线上的 AI 社区，认识开发者、创业者和创作者，把圈子从屏幕后面接到人与人之间。"
+            ],
+            "items": [
+                {
+                    "name": "WaytoAGI",
+                    "period": "2023+",
+                    "type": "AI开发者 / 创业者 / 创作者交流",
+                    "desc": "AI 创作阶段开始参与 WaytoAGI 社区交流。在杭州线下活动里认识开发者、创业者和创作者，也持续关注社区里大家在聊什么、缺什么。",
+                    "insight": "这个阶段让我意识到：AI 的发展不只是模型能力谁更强，也靠大量愿意分享的人、写教程的人，以及真正在场的社区参与者。",
+                    "images": [
+                        {
+                            "src": "images/lab/waytoagi-hangzhou.png",
+                            "alt": "WaytoAGI 杭州站五日 AI 探索 · 线下合影"
+                        }
+                    ]
+                },
+                {
+                    "name": "AI电子春晚",
+                    "period": "2024–2025",
+                    "type": "AI社区共创项目",
+                    "desc": "AI 电子春晚起源于 WaytoAGI 杭州线下活动。在较短周期内，和创作者、技术伙伴、社区成员一起把 AI 内容共创组织起来。",
+                    "roles": ["创作者资源协调", "内容协作推进", "项目执行管理"],
+                    "insight": "第一次看到创作者、技术人员和社区成员为同一个目标往前推，也更直观地明白：AI 社区要长起来，组织和运营是绕不开的。",
+                    "images": [
+                        {
+                            "src": "images/lab/spring-gala-speak.jpg",
+                            "alt": "AI春晚相关活动上台发言"
+                        },
+                        {
+                            "src": "images/lab/spring-gala-2024.png",
+                            "alt": "2024 AI春晚共创伙伴线下合影"
+                        },
+                        {
+                            "src": "images/lab/spring-gala-2025-group.png",
+                            "alt": "2025 AI春晚庆功宴大合影"
+                        },
+                        {
+                            "src": "images/lab/spring-gala-2025-moments.png",
+                            "alt": "2025 AI春晚团建与开发者先锋大会记录"
+                        },
+                        {
+                            "src": "images/lab/spring-gala-cake.jpg",
+                            "alt": "AI春晚团建蛋糕"
+                        }
+                    ],
+                    "metrics": [
+                        { "value": "40+", "label": "AI节目" },
+                        { "value": "70+", "label": "核心成员" },
+                        { "value": "300+", "label": "志愿者" },
+                        { "value": "百万+", "label": "曝光" },
+                        { "value": "180+", "label": "媒体报道" }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ecosystem",
+            "title": "03 AI Ecosystem",
+            "subtitle": "从创作者到平台生态运营",
+            "lead": [
+                "从个人创作，走到平台运营。在中国电信天翼云魔乐社区 AIGC 专区建设过程中，我开始站在平台侧看 AI 生态：内容从哪来、人为什么留下、活动怎样把人连进来。"
+            ],
+            "tags": ["AIGC专区建设", "创作者运营", "高校AI赛事", "企业合作活动"],
+            "insight": "以前更关心一个作品为什么被喜欢；后来做社区运营，更常问的是：为什么有人愿意贡献内容？怎样让社区持续长出新的东西？",
+            "metrics": [
+                { "value": "40,000+", "label": "开发者参与" },
+                { "value": "1,000+", "label": "核心创作者" }
+            ],
+            "imageFit": "contain",
+            "images": [
+                {
+                    "src": "images/lab/mole-campus-competition.png",
+                    "alt": "高校AI赛事 · MAXP 全国高性能云计算创新大赛"
+                },
+                {
+                    "src": "images/lab/mole-creator-event.png",
+                    "alt": "魔乐创作者活动 · AI夏日造梦"
+                }
+            ]
+        },
+        {
+            "id": "practice",
+            "title": "04 AI Practice",
+            "subtitle": "模型实验与工作流实践",
+            "lead": [
+                "这里记录的是工具和实践里的判断，不是算法工程师履历。重点仍是：用户怎么开始、产品怎么藏复杂度、交付能不能稳住。"
+            ],
+            "metrics": [
+                { "value": "60+", "label": "模型实验案例" },
+                { "value": "100+", "label": "AI视觉作品" }
+            ],
+            "tags": ["Midjourney", "ComfyUI", "LoRA Fine-tuning", "Stable Diffusion"],
+            "practices": [
+                {
+                    "tool": "Midjourney",
+                    "period": "2022 起",
+                    "focus": "第一次接触 AI 的体验",
+                    "desc": "从 Prompt 到生成流程自己跑通，也一直在看：用户第一次碰到 AI 时卡在哪。",
+                    "insight": "很多 AI 产品的问题不是能力不够，而是用户不知道如何开始。"
+                },
+                {
+                    "tool": "ComfyUI",
+                    "period": "2023 起",
+                    "focus": "工作流与产品取舍",
+                    "desc": "搭节点工作流，摸模型调用、参数和 Pipeline 编排——哪些该露出来，哪些该收起来。",
+                    "insight": "复杂能力应该被藏好，而不是一股脑交给用户。"
+                },
+                {
+                    "tool": "LoRA 定制",
+                    "period": "2023 起",
+                    "focus": "从作品到交付",
+                    "desc": "做过 AI 视觉内容定制，把生成放进真实客户需求里试。",
+                    "insight": "从生成图片到商业交付，中间还差稳定性、效率和需求是否对得上。"
+                }
+            ]
+        },
+        {
+            "id": "design-portfolio",
+            "title": "05 Design Portfolio",
+            "subtitle": "视觉设计作品沉淀",
+            "lead": [
+                "进入 AI 之前，我有视觉设计背景。设计训练留下的，是对用户体验、视觉表达和内容沟通的感觉——这些后来也会影响我做 AI 产品和社区时的判断。"
+            ],
+            "note": "页面上只放封面入口；点进去可查看完整作品集。",
+            "imageFit": "contain",
+            "link": {
+                "href": "docs/kiki-design-portfolio.pdf",
+                "label": "查看完整作品集"
+            },
+            "images": [
+                {
+                    "src": "images/lab/design-portfolio-cover.png",
+                    "alt": "雨洁作品集 · 平面案例封面（点击查看全部）"
+                }
+            ]
+        }
+    ]
+}
